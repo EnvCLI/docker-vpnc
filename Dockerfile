@@ -18,8 +18,7 @@ ADD rootfs /
 # Installation
 ############################################################
 RUN set -xe &&\
-	yum install bash net-tools which -y &&\
-	chmod +x /usr/local/bin/docker-entrypoint.sh &&\
+	yum install bash net-tools which iptables iproute -y &&\
 	# Prepare
 	yum install svn gcc gcc-c++ make libgcrypt-devel gnutls-devel perl-core -y &&\
 	mkdir -p /tmp/src &&\
