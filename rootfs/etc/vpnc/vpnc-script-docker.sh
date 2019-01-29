@@ -36,7 +36,7 @@
 #* INTERNAL_IP6_DNS             -- IPv6 list of dns servers
 #* USE_INTERNET_DNS             -- Use the internet DNS instead of the VPN dns server?
 
-env | sort
+# env | sort
 
 # Delete DNS info provided by VPN server to use internet DNS
 # Comment following line to use DNS beyond VPN tunnel
